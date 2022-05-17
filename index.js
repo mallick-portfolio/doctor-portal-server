@@ -35,7 +35,6 @@ const run = async () => {
     app.get('/services/:category', async (req, res) => {
       const category = req.params;
       const result = await services.findOne(category);
-      console.log(result)
       res.send(result)
     })
 
